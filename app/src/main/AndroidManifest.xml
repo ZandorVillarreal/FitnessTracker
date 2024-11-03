@@ -19,12 +19,16 @@
         android:theme="@style/Theme.FitnessTracker"
         tools:targetApi="31">
 
+        <!-- OAuth Client ID metadata for Google Fit -->
+        <meta-data
+            android:name="com.google.android.gms.auth.api.fitness.CLIENT_ID"
+            android:value="770728892748-v4f5cgaqpg3l6p6v1etb69lislnqglmv.apps.googleusercontent.com" />
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
